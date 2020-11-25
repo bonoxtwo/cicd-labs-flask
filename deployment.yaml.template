@@ -1,0 +1,10 @@
+serviceName: '3-35-47-114'
+containers:
+ flask:
+  image: '${IMAGE_NAME}'
+  ports:
+   '80': 'HTTP'
+publicEndpoint:
+  containerName: 'flask'
+  containerPort: 80
+
